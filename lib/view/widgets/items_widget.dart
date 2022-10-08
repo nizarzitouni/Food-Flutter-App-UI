@@ -37,16 +37,21 @@ class ItemsWidget extends StatelessWidget {
                 InkWell(
                   onTap: () {
                     //
-                    Navigator.pushNamed(context, 'singleItemPage');
+                    Navigator.pushNamed(context, 'singleItemScreen');
                   },
                   child: Container(
                     margin: EdgeInsets.all(10),
-                    //child: Image.asset('', width: 120, hieght=120, fit: BoxFit.cover,),
-                    child: Icon(
-                      Icons.bug_report,
-                      color: Colors.white,
-                      size: 80,
+                    child: Image.asset(
+                      'assets/images/$i.png',
+                      width: 80,
+                      height: 80,
+                      fit: BoxFit.cover,
                     ),
+                    // child: Icon(
+                    //   Icons.bug_report,
+                    //   color: Colors.white,
+                    //   size: 80,
+                    // ),
                   ),
                 ),
                 Column(
